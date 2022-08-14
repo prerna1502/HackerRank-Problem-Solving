@@ -1,44 +1,16 @@
-<<<<<<< HEAD
-import java.io.*;
 import java.util.*;
-import java.text.*;
-import java.math.*;
-import java.util.regex.*;
-
 public class GradingStudents {
-
     public static void main(String[] args) {
-        Scanner in = new Scanner(System.in);
-        int n = in.nextInt();
-        for(int a0 = 0; a0 < n; a0++){
-            int grade = in.nextInt();
-            if (grade >= 38) {
-                if (grade%5 >= 3) 
-                grade = grade/5*5 + 5;
+        try (Scanner in = new Scanner(System.in)) {
+            int n = in.nextInt();
+            for(int a0 = 0; a0 < n; a0++){
+                int grade = in.nextInt();
+                if (grade >= 38) {
+                    if (grade%5 >= 3) 
+                    grade = grade/5*5 + 5;
+                }
+                System.out.println(grade);
             }
-            System.out.println(grade);
         }
     }
-=======
-import java.io.*;
-import java.util.*;
-import java.text.*;
-import java.math.*;
-import java.util.regex.*;
-
-public class GradingStudents {
-
-    public static void main(String[] args) {
-        Scanner in = new Scanner(System.in);
-        int n = in.nextInt();
-        for(int a0 = 0; a0 < n; a0++){
-            int grade = in.nextInt();
-            if (grade >= 38) {
-                if (grade%5 >= 3) 
-                grade = grade/5*5 + 5;
-            }
-            System.out.println(grade);
-        }
-    }
->>>>>>> dacbb168044be608807553ea272a9523c6181a3a
 }
